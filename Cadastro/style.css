@@ -1,0 +1,144 @@
+* {
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+    
+
+.card {
+    background-color: rgba(228, 228, 228, 0.315);
+    padding: 2rem;
+
+    width: 30rem;
+    height: 35rem;
+    border-radius: .5rem;
+
+    box-shadow: 1px 3px 6px 1px #bebebe60;
+}
+
+
+.container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2a246e;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #272262;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 1.2rem;
+    transition: all .3s ease-out;
+    color: #fff;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #635e92;
+}
+
+.label-float label {
+    color: #272262;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    font-size: 1.2rem;
+    transition: .1s;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label {
+    font-size: 1rem;
+    margin-top: 0;
+    color: #555086;
+    transition: .1s;
+}
+
+button {
+    background-color: transparent;
+    border-color: #5b5697;
+    color: #272262;
+    padding: 7px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    transition: all .1s ease-out;
+    outline: none;
+}
+
+button:hover{
+    background-color: #413c80a9;
+    color: #fff;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: #272262;
+}
+
+.fa-eye:hover {
+    transform: scale(1.1);
+}
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    
+
+}
+
+#msgSuccess{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #59ce4e;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+
+}

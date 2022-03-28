@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+
+            <h1> Cadastrar </h1>
+
+
+            <div id="msgError"></div>
+            <div id="msgSuccess"></div>
+
+        <div class="label-float">
+            <input type="text" id="nome" placeholder="" required>
+            <label id="labelNome" for="nome">Nome</label>
+        </div>
+
+        <div class="label-float">
+            <input type="text" id="usuario" placeholder="" required>
+            <label id="labelUsuario" for ="usuario">Usuário</label>
+        </div>
+
+
+        <div class="label-float">
+            <input type="password" id="password" placeholder="" required> 
+            <label id="labelPassword" for="senha">Senha</label>
+            <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+
+        </div>
+
+        <div class="label-float">
+            <input type="password" id="confirmPassword" placeholder="" required>
+            <label id="labelconfirmPassword" for="confirmSenha">Confirmar senha</label>
+            <i id="verConfirmPassword" class="fa fa-eye" aria-hidden="true"></i>
+
+        </div>
+
+        <div class="justify-center">
+            <button onclick="cadastrar()">cadastrar</button>
+        </div>
+        </div>
+        
+
+      
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
