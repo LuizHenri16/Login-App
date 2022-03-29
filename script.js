@@ -59,7 +59,7 @@ let entrar = function() {
 
         setTimeout(() =>
          {
-             window.location.href = "/App/index.html"
+             window.location.href = "../App/index.html"
          } , 2000)
 
          localStorage.setItem("userLogado", JSON.stringify(validUser) )
